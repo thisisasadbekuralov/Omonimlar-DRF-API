@@ -10,7 +10,8 @@ class HomonymsDetailSerializer(serializers.ModelSerializer):
         depth = 1
 
 
+
 class HomonymsListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Homonyms
-        fields = ['id', 'word']
+        fields = ['id', 'word', 'word_type']
